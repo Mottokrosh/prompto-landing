@@ -162,6 +162,11 @@ footer {
 	text-align: center;
 }
 
+.get-the-app a {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
 #subscribe {
 	background-color: rgba(77, 189, 183, 0.25);
 }
@@ -210,6 +215,11 @@ footer {
 	.hero h1 {
 		font-size: 2rem;
 	}
+
+	.get-the-app a {
+		display: block;
+		margin-bottom: 1rem;
+	}
 }
 
 @media (max-width: 540px) {
@@ -233,11 +243,6 @@ footer {
 	header[role="banner"] nav li {
 		text-align: center;
 		-webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1;
-	}
-
-	.get-the-app a {
-		display: block;
-		margin-bottom: 1rem;
 	}
 
 	#subscribe input {
