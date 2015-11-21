@@ -7,8 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
-	<header id="top" role="banner">
-		<a href="#" id="logo"><img src="assets/img/prompto.svg"></a>
+	<a name="top"></a>
+	<header role="banner">
+		<a href="#top" id="logo"><img src="assets/img/prompto.svg"></a>
 		<nav>
 			<ul>
 				<li><a href="#get">Get the App</a></li>
@@ -73,6 +74,24 @@
 			<p>&copy; 2015 Team Prompto</p>
 		</div>
 	</footer>
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+		$(function () {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top - 80
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
 
 </body>
 </html>
