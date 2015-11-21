@@ -54,16 +54,11 @@
 			</div>
 			<div class="row">
 				<label>
-					<input type="text" name="subject" placeholder="Subject">
-				</label>
-			</div>
-			<div class="row">
-				<label>
 					<textarea name="message" placeholder="Message"></textarea>
 				</label>
 			</div>
 			<div class="row">
-				<button type="submit" class="large">Send Message</button>
+				<a role="button" class="large" href="mailto:promptoapp@gmail.com?subject=Contact&body=">Send Message</a>
 			</div>
 		</form>
 	</section>
@@ -97,6 +92,17 @@
 			$('.get-the-app a').on('click', function (evt) {
 				evt.preventDefault();
 				alert('Coming soon.');
+			});
+
+			var originalContactHref = $('#contact a').attr('href');
+
+			$('#contact a').on('click', function (evt) {
+				var body = 'Message from ' +
+					$('#contact [name="name"]').val() + ' (' +
+					$('#contact [name="email"]').val() + '). ' +
+					$('#contact [name="message"]').val();
+
+				$(this).attr('href', originalContactHref + body);
 			});
 		});
 	</script>

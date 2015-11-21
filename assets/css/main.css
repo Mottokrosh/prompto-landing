@@ -223,9 +223,10 @@ footer .social img {
 	width: 100%;
 }
 
-#contact button {
+#contact a {
 	max-width: 50%;
 	margin: 0 auto;
+	text-align: center;
 }
 
 
@@ -285,7 +286,7 @@ footer .social img {
 		padding: 0;
 	}
 
-	#contact button {
+	#contact a {
 		max-width: 100%;
 		width: 100%;
 	}
