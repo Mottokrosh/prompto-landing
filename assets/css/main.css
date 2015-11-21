@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    background-color: #323a3c;
+    font-size: 18px;
+}
+
+body {
+    background-image: url(../img/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    padding: 80px 0 0 0;
+}
+
+h1, h2, h3, h4 {
+    /*color: #E8D22C;*/
+    color: #f9f5da;
+    margin: 0 0 1em 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+a, a:visited {
+    color: #ED4771;
+    text-decoration: none;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+a:hover, a:active {
+    color: #FF668C;
+    border-bottom: 2px solid #FF668C;
+}
+
+button, [role="button"], [type="button"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ED4771;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 1rem;
+    min-height: 42px;
+}
+
+button:hover, [role="button"]:hover, [type="button"]:hover {
+    background-color: #FF668C;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.large, [role="button"].large, [type="button"].large {
+    padding: 20px 40px;
+}
+
+input, textarea {
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+    background-color: #ddf0ef;
+    border: 2px solid #4cbeb7;
+    border-radius: 2px;
+    padding: 18px 24px;
+}
+
+div, p {
+    margin: 0 0 2rem 0;
+}
+
+div:last-of-type, p:last-of-type {
+    margin-bottom: 0;
+}
+
+header[role="banner"] {
+    background-color: #323a3c;
+    padding: 20px 40px;
+    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+#logo img {
+    max-height: 2rem;
+}
+
+header[role="banner"] nav {
+    margin-left: auto;
+}
+
+header[role="banner"] nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header[role="banner"] nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header[role="banner"] nav a {
+    display: inline-block;
+    line-height: 2;
+    margin-top: 2px;
+}
+
+section {
+    margin: 0 0 20px 0;
+}
+
+section > *, footer > * {
+    max-width: 960px;
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    background-color: #323a3c;
+    padding: 20px;
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/betty.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    bottom: 20px;
+    max-width: 960px;
+    padding: 0 20px;
+}
+
+#get > div {
+    padding: 50px;
+    text-align: center;
+}
+
+#subscribe {
+    background-color: rgba(77, 189, 183, 0.25);
+}
+
+#subscribe > form {
+    padding: 50px;
+    text-align: center;
+}
+
+#subscribe button {
+    margin-left: 1rem;
+}
+
+#contact > form {
+    padding: 50px;
+}
+
+#contact .row {
+    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
+    margin-bottom: 1rem;
+}
+
+#contact .row > * {
+    flex: 1;
+}
+
+#contact .row > *:not(:last-of-type) {
+    padding-right: 1rem;
+}
+
+#contact .row input {
+    width: 100%;
+}
+
+#contact .row textarea {
+    width: 100%;
+}
+
+#contact button {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+
