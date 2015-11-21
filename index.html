@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prompto</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+	<a name="top"></a>
+	<header role="banner">
+		<a href="#top" id="logo"><img src="assets/img/prompto.svg"></a>
+		<nav>
+			<ul>
+				<li><a href="#get">Get the App</a></li>
+				<li><a href="#subscribe">Subscribe</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="hero">
+		<div>
+			<h1>Digital support and monitoring system for independent people who suffer from memory dysfunction</h1>
+		</div>
+	</section>
+
+	<section id="get">
+		<div>
+			<h2>Available on the App Store and Play Store</h2>
+			<div class="buttons get-the-app">
+				<a href="#" role="button">Get from App Store</a>
+				<a href="#" role="button">Get from Play Store</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="subscribe">
+		<form>
+			<input type="email" name="email" placeholder="Your Email"><button type="submit" class="large">Subscribe</button>
+		</form>
+	</section>
+
+	<section id="contact">
+		<form>
+			<div class="row">
+				<label>
+					<input type="text" name="name" placeholder="Your Name">
+				</label>
+				<label>
+					<input type="email" name="email" placeholder="Your Email">
+				</label>
+			</div>
+			<div class="row">
+				<label>
+					<input type="text" name="subject" placeholder="Subject">
+				</label>
+			</div>
+			<div class="row">
+				<label>
+					<textarea name="message" placeholder="Message"></textarea>
+				</label>
+			</div>
+			<div class="row">
+				<button type="submit" class="large">Send Message</button>
+			</div>
+		</form>
+	</section>
+
+	<footer>
+		<div>
+			<p>&copy; 2015 Team Prompto</p>
+			<div class="social">
+				<a href="https://www.facebook.com/prompto2/" target="_blank"><img src="assets/img/social/facebook-square.svg"></a>
+				<a href="https://twitter.com/prompto_app" target="_blank"><img src="assets/img/social/twitter.svg"></a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script>
+		$(function () {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top - 80
+						}, 1000);
+						return false;
+					}
+				}
+			});
+
+			$('.get-the-app a').on('click', function (evt) {
+				evt.preventDefault();
+				alert('Coming soon.');
+			});
+		});
+	</script>
+
+</body>
+</html>
