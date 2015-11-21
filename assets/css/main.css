@@ -143,6 +143,23 @@ footer {
 	color: #9ba1a2;
 }
 
+footer > div {
+	display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
+}
+
+footer > div > * {
+	-webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1;
+}
+
+footer .social {
+	margin-left: auto;
+	text-align: right;
+}
+
+footer .social img {
+	max-width: 40px;
+}
+
 .hero {
 	min-height: 100vh;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/betty.jpg);
